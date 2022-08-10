@@ -3,9 +3,14 @@ API Rest com finalidade de estudos - Spring Boot &amp; Docker
 
 Rotas disponiveis:
 
-[POST]
+`POST`
+
 http://localhost:8080/plantas
+
 Body:
+
+```json
+
 {
     "nome": "Lágrimas-de-bebê",
     "descricao": "Uma planta apreciada pelo valor ornamental de suas folhas, pode se espalhar rapidamente e cobrir a superfíce como um tapete.",
@@ -16,11 +21,17 @@ Body:
     "cuidados": "Sol parcial ou sombra total, manter o solo sempre úmido mas sem acumulo de água."
 }
 
+```
 
-[GET]
+<br><br>
+
+`GET`
+
 http://localhost:8080/plantas
 
 Response:
+
+```json
 [
     {
         "id": 1,
@@ -44,11 +55,18 @@ Response:
         "cuidados": "Sol parcial, tolerante a seca, menos rega, regar quando sole estiver seco."
     }
 ]
+```
 
-[GET]/{id}
+<br><br>
+
+
+`GET/{id}`
+
 http://localhost:8080/plantas/1
 
 Response:
+
+```json
 {
         "id": 1,
         "nome": "Lágrimas-de-bebê",
@@ -59,3 +77,4 @@ Response:
         ],
         "cuidados": "Sol parcial ou sombra total, manter o solo sempre úmido mas sem acumulo de água."
     }
+```
