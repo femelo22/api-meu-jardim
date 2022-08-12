@@ -1,4 +1,4 @@
-# api-meu-jardim
+# API Meu Jardim 🌻🌵🌱
 API Rest com finalidade de estudos - Spring Boot &amp; Docker
 
 Rotas disponiveis:
